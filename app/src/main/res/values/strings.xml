@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HeartBeatSDK</string>
+    <string name="random_event">Random Event</string>
 </resources>

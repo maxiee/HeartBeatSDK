@@ -3,4 +3,5 @@
     <string name="random_event">Random Event</string>
     <string name="event_id">Event id:</string>
     <string name="get_event">Get Event</string>
+    <string name="get_thoughts">Get Thoughts</string>
 </resources>

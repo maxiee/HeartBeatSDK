@@ -11,11 +11,35 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/random_event"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/random_event"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_id" />
+            <EditText
+                android:id="@+id/input_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/get_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_event" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

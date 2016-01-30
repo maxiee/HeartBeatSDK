@@ -23,4 +23,15 @@ public class EventAPI {
         cursor.close();
         return e;
     }
+
+    public static Event getEvent(Context context, long id) {
+        ContentResolver resolver = context.getContentResolver();
+        Uri uri = Uri.parse(Constant.API_EVENT_ID + String.valueOf(id));
+        Cursor cursor = resolver.query(uri, null, null, null, null);
+        if (cursor == null || cursor.getCount() < 1) return null;
+        cursor.moveToNext();
+        Event e = EventUtils.queryEvent(cursor);
+        cursor.close();
+        return e;
+    }
 }
